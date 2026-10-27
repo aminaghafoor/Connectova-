@@ -1,0 +1,121 @@
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.person-card {
+  background: #fff;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.person-image {
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 15px;
+}
+
+.person-card button {
+  margin-top: 15px;
+
+  width: 100%;
+}
+.add-friend-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #1877f2;
+
+  color: #fff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.add-friend-btn:hover {
+  background: #0d63d6;
+
+  transform: translateY(-2px);
+}
+
+.add-friend-btn:disabled {
+  background: #28a745;
+
+  cursor: default;
+}
+.friends-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #28a745;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: default;
+}
+
+.sent-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #6c757d;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: default;
+}
+
+.accept-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #1877f2;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background: #0d63d6;
+}

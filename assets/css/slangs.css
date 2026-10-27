@@ -1,0 +1,395 @@
+/* =====================================
+   CONNECTOVA
+   Slangs Page CSS
+   ===================================== */
+
+.slangs-container {
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: 40px auto;
+}
+
+.slangs-title {
+  text-align: center;
+
+  font-size: 36px;
+
+  margin-bottom: 10px;
+}
+
+.slangs-description {
+  text-align: center;
+
+  color: #777;
+
+  margin-bottom: 35px;
+}
+
+/* Search */
+
+.slang-search {
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.slang-search input {
+  width: 70%;
+
+  max-width: 600px;
+
+  padding: 14px 18px;
+
+  border-radius: 30px;
+
+  border: 1px solid white;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.slang-search input:focus {
+  border-color: #4a90e2;
+}
+
+/* Categories */
+
+.slang-categories {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 35px;
+}
+
+.slang-categories button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  background: #eee;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.slang-categories button:hover {
+  transform: translateY(-3px);
+}
+
+/* Cards */
+
+/* =====================================
+   SLANG CARDS
+===================================== */
+
+.slang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.slang-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.slang-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(99, 102, 241, 0.18);
+}
+
+/* decorative top line */
+
+.slang-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), #8b5cf6);
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.slang-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.slang-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.slang-header span {
+  background: #eef2ff;
+  color: var(--primary);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =====================================
+   MEANING
+===================================== */
+
+.slang-meaning {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* =====================================
+   EXAMPLE
+===================================== */
+
+.slang-example {
+  background: #f8fafc;
+  border-left: 4px solid var(--primary);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.slang-card small {
+  margin-top: auto;
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .slangs-title {
+    font-size: 28px;
+  }
+
+  .slang-search input {
+    width: 100%;
+  }
+
+  .slang-card {
+    padding: 20px;
+  }
+}
+/* ===========================
+   Recently Added
+=========================== */
+
+.section-title {
+  margin-top: 40px;
+
+  margin-bottom: 20px;
+
+  font-size: 28px;
+}
+
+.recent-slangs {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.recent-card {
+  background: #4a90e2;
+
+  color: white;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.recent-card:hover {
+  transform: translateY(-4px);
+}
+/* =======================
+   Popular Slangs
+======================= */
+
+.popular-slangs {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.popular-card {
+  background: #ff9800;
+
+  color: white;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.popular-card:hover {
+  transform: translateY(-4px);
+}
+/* Modal */
+
+.modal {
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 999;
+}
+
+/* =====================================
+   READ MORE MODAL
+===================================== */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 650px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  box-shadow: var(--shadow);
+  animation: modalPop 0.25s ease;
+}
+
+@keyframes modalPop {
+  from {
+    transform: translateY(20px) scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 30px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.close-modal:hover {
+  color: var(--primary);
+}
+
+#modalBody h2 {
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 30px;
+}
+
+#modalBody p {
+  margin-bottom: 16px;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+#modalBody strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#modalBody hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 18px 0;
+}
+
+.read-more-btn {
+  margin-top: 15px;
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background: #4a90e2;
+
+  color: #fff;
+}

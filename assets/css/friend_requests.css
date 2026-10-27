@@ -1,0 +1,79 @@
+.page-header {
+  text-align: center;
+
+  margin: 35px 0;
+}
+
+.page-header h1 {
+  color: #1877f2;
+}
+
+.request-card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.request-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.request-image {
+  width: 75px;
+
+  height: 75px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.request-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+.accept-btn {
+  background: #1877f2;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: #ef4444;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}

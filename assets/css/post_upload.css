@@ -1,0 +1,266 @@
+/* ===========================
+   CONNECTOVA - POST UPLOAD
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Card */
+
+.post-container {
+  width: 100%;
+  max-width: 750px;
+}
+
+.post-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+
+.post-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1877f2;
+  font-size: 28px;
+}
+
+/* Text Area */
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+
+  resize: vertical;
+
+  border: 1px solid #d8d8d8;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+textarea:focus {
+  border-color: #1877f2;
+
+  box-shadow: 0 0 10px rgba(24, 119, 242, 0.2);
+}
+
+/* Upload Buttons */
+
+.upload-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+}
+
+.upload-btn {
+  flex: 1;
+
+  background: #f7f7f7;
+
+  border: 2px dashed #d8d8d8;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  transition: 0.3s;
+
+  font-weight: bold;
+}
+
+.upload-btn:hover {
+  background: #1877f2;
+
+  color: white;
+
+  border-color: #1877f2;
+}
+
+.upload-btn i {
+  margin-right: 8px;
+}
+
+/* Preview Area */
+
+#previewArea {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.preview-image {
+  width: 130px;
+
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  border: 1px solid #ddd;
+}
+
+.preview-video {
+  width: 220px;
+
+  border-radius: 12px;
+}
+
+/* Progress */
+
+.progress-wrapper {
+  width: 100%;
+
+  background: #ececec;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  margin-top: 25px;
+
+  height: 20px;
+}
+
+.progress-bar {
+  width: 0%;
+
+  height: 100%;
+
+  background: #1877f2;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 12px;
+
+  transition: 0.25s;
+}
+
+/* Submit Button */
+
+.submit-btn {
+  margin-top: 25px;
+
+  width: 100%;
+
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  background: #1877f2;
+
+  color: white;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0d5fd8;
+
+  transform: translateY(-2px);
+}
+
+/* Message */
+
+#message {
+  margin-top: 18px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+  color: #333;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .post-card {
+    padding: 18px;
+  }
+
+  .upload-buttons {
+    flex-direction: column;
+  }
+
+  .preview-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .preview-video {
+    width: 100%;
+  }
+}
+.post-text-wrapper {
+  position: relative;
+}
+/*post emoji css  */
+.emoji-wrapper {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+
+  display: none;
+
+  z-index: 9999;
+}
+
+.emoji-wrapper.active {
+  display: block;
+}
+/* Emoji Picker */
+
+emoji-picker {
+  display: block;
+  width: 320px;
+  height: 400px;
+}
